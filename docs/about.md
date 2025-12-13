@@ -118,7 +118,7 @@ If this resonated with you, if you found a bug (literal or metaphorical), or if 
 
 ## Final Thought
 
-This project took months to write. Not because the code was hard. But because the emotions were hard. Because I had to work through my own history of being "optimized" by people who loved me. Of trying to "fix" people I loved.
+This project took me one month to write. Not because the code was hard. But because the emotions were hard. Because I had to work through my own history of being "optimized" by people who loved me. Of trying to "fix" people I loved.
 
 If you're reading this, thank you. For being patient with the hidden layers. For exploring the console commands. For giving this weird code-poetry-story thing a chance.
 
