@@ -264,6 +264,36 @@ open web/index.html
 
 ---
 
+## `$ ls /web/archive/`
+
+### Complete Narrative Archives
+
+The original source narratives are preserved in their complete form:
+
+```bash
+web/archive/
+├── 89_envying_baby_complete.html        # 15,000 words, 13 chapters, dual timelines
+└── aliens_testing_water_complete.md     # Zero draft, 5 phases, bilingual (CN/EN)
+```
+
+**To experience the full stories:**
+
+```bash
+# Read Envying Baby (complete HTML with embedded CSS)
+open web/archive/89_envying_baby_complete.html
+
+# Read Aliens Testing Water (zero draft markdown)
+cat web/archive/aliens_testing_water_complete.md
+```
+
+These archives contain the original narrative structure before dissection into the module system. The `/modules/` directories provide navigable filesystem architecture, while `/web/archive/` preserves the linear reading experience.
+
+**Module READMEs provide guided navigation:**
+- `modules/recursive_love/README.md` - Envying Baby index & structure guide
+- `modules/deep_core_monitor/README.md` - Aliens Testing Water index & filesystem map
+
+---
+
 ## `/dev/null` (Abandoned Projects)
 
 Things we tried to implement but failed:
