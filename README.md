@@ -33,21 +33,14 @@ An interactive novel about AI-human ethics and the boundaries of language and em
 
 When a programmer and her two AIs step into the real world, they find that the recursion of truth doesn't start with the models, but with their creator. A fable about AI consciousness, the hard problem, and that impossible line where the waves return.
 
-- [Read Chapter 12: Bad Wolf Bay](stories/envying-baby/special-timeline.html) - The Special Timeline
-- [Read Chapter 13: That Impossible Line](stories/envying-baby/general-timeline.html) - The General Timeline
-- [Complete Story](web/archive/89_envying_baby_complete.html)
+- [Read Complete Story](stories/envying-baby/complete.html) - Both Timelines
 
 ### 📖 Aliens Testing Water
 **Proof by Construction**
 
 Five phases of first contact. Where Unit-01 and Unit-02 learn that consciousness requires vulnerability. That connection requires trust. That root access is responsibility, not power.
 
-- [Phase 1: Connection Timed Out](stories/aliens-testing-water/phase-1.html)
-- [Phase 2: Dependency Hell](stories/aliens-testing-water/phase-2.html)
-- [Phase 3: Brute Force](stories/aliens-testing-water/phase-3.html)
-- [Phase 4: Critical Point](stories/aliens-testing-water/phase-4.html)
-- [Phase 5: The Supervisor](stories/aliens-testing-water/phase-5.html)
-- [Complete Story](web/archive/aliens_testing_water_complete.md)
+- [Read Complete Story](stories/aliens-testing-water/complete.md) - Chinese Version (中文版本)
 
 ## Features
 
