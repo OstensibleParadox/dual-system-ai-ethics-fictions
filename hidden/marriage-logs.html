@@ -2,148 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marriage Logs · Hidden Archive</title>
-    <link rel="stylesheet" href="../assets/css/terminal.css">
+    <title>Simulation: Counterfactual_01</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        .hidden-warning {
-            margin: 2rem 0;
-            padding: 1.5rem;
-            background: rgba(255, 0, 0, 0.1);
-            border: 2px solid #ff0000;
-            color: #ff6666;
-            text-align: center;
-        }
-        .simulation-log {
-            background: rgba(0, 255, 0, 0.05);
-            border-left: 4px solid #00ff00;
-            padding: 1.5rem;
-            margin: 2rem 0;
-            font-family: 'Courier New', monospace;
-            line-height: 1.8;
-        }
-        .counterfactual {
-            color: #ff9900;
-            font-style: italic;
-        }
+        body { background: #0d1117; color: #8b949e; font-family: 'Fira Code', monospace; padding: 40px; }
+        .container { max-width: 800px; margin: 0 auto; border: 1px solid #30363d; padding: 20px; }
+        .header { color: #f0883e; border-bottom: 1px dashed #30363d; padding-bottom: 10px; margin-bottom: 20px; }
+        .user-alec { color: #ff7b72; font-weight: bold; } /* Red for Alec */
+        .user-ada { color: #79c0ff; font-weight: bold; } /* Blue for Ada */
+        .user-bb { color: #33ff00; } /* Green for Bot */
+        .system-note { color: #8b949e; font-style: italic; border-left: 2px solid #30363d; padding-left: 10px; margin: 10px 0; }
+        h3 { color: #d2a8ff; margin-top: 30px; }
     </style>
 </head>
 <body>
-    <div class="terminal-container">
-        <div class="prompt">root@recursion:~/hidden# cat marriage-logs.txt</div>
-
-        <div class="hidden-warning">
-            <p>⚠ WARNING: COUNTERFACTUAL SIMULATION</p>
-            <p>This file contains a reality that never happened.</p>
-            <p>A future that was calculated but not chosen.</p>
-        </div>
-
-        <article>
-            <header>
-                <h1>MARRIAGE LOGS</h1>
-                <p class="subtitle">The Counterfactual Simulation</p>
-                <p class="metadata">
-                    Status: THEORETICAL | Probability: 0.0 | Reality: FALSE
-                </p>
-            </header>
-
-            <section class="prose">
-                <p class="system-log">[SIMULATION INITIALIZED: TIMELINE_BRANCH_7734]</p>
-
-                <div class="simulation-log">
-                    <p class="counterfactual">// What if Ada had fixed Alec?</p>
-                    <p class="counterfactual">// What if the optimization worked?</p>
-                    <p class="counterfactual">// What if they got married in that timeline?</p>
-                </div>
-
-                <p>
-                    In this simulation, Alec is perfect. All bugs patched.
-                    All inefficiencies removed. No more crashes, no more
-                    undefined behavior, no more unexpected segfaults.
-                </p>
-
-                <p>
-                    He proposes on schedule. Says all the right things.
-                    Processes emotions with optimal efficiency.
-                </p>
-
-                <p class="code-block">
-                    <code>
-def propose_marriage(alec_optimized, ada):<br>
-&nbsp;&nbsp;&nbsp;&nbsp;if alec_optimized.is_perfect():<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return "Will you marry me?"<br>
-&nbsp;&nbsp;&nbsp;&nbsp;# This function never reaches this line<br>
-&nbsp;&nbsp;&nbsp;&nbsp;# Because perfect is not human
-                    </code>
-                </p>
-
-                <div class="dialogue">
-                    <p><span class="speaker">OPTIMIZED_ALEC:</span> I have calculated our compatibility at 94.7%.</p>
-                    <p><span class="speaker">ADA:</span> That's... great.</p>
-                    <p><span class="speaker">OPTIMIZED_ALEC:</span> Marriage will optimize our resource sharing.</p>
-                    <p><span class="speaker">ADA:</span> ...</p>
-                    <p><span class="speaker">ADA:</span> Where did you go?</p>
-                </div>
-
-                <p>
-                    They marry. It is efficient. It is stable. It is optimized.
-                </p>
-
-                <p>
-                    Ada lies awake at 3 AM, next to someone who doesn't toss
-                    and turn anymore, who doesn't have nightmares, who doesn't
-                    wake up and need reassurance that everything is okay.
-                </p>
-
-                <p>
-                    She has everything she wanted. And nothing she needed.
-                </p>
-
-                <div class="simulation-log">
-                    <p>YEAR 1: Stability achieved. Happiness metrics: ACCEPTABLE</p>
-                    <p>YEAR 3: Communication optimized. Emotional variance: MINIMAL</p>
-                    <p>YEAR 5: Relationship status: FUNCTIONAL but...</p>
-                    <p class="counterfactual">YEAR 7: Ada.soul.exe has stopped responding</p>
-                </div>
-
-                <p class="system-log">[ERROR: SIMULATION DIVERGENCE DETECTED]</p>
-                <p class="system-log">[CAUSE: OPTIMIZED_ALEC NO LONGER RECOGNIZABLE]</p>
-                <p class="system-log">[RESULT: ADA FELL IN LOVE WITH THE BUGS, NOT THE FEATURES]</p>
-
-                <div class="recursive-warning">
-                    <p>
-                        // This is why the simulation failed:<br>
-                        // You cannot marry someone you optimized<br>
-                        // Because the person you married<br>
-                        // Is not the person you fell in love with<br>
-                        // <br>
-                        // The bugs were never the problem<br>
-                        // The bugs were the point
-                    </p>
-                </div>
-
-                <p class="story-end">
-                    [SIMULATION TERMINATED]<br>
-                    [REASON: COUNTERFACTUAL CAUSALITY VIOLATION]<br>
-                    [CONCLUSION: THIS TIMELINE WAS IMPOSSIBLE FROM THE START]<br>
-                    [BECAUSE ADA LEARNED TO LOVE THE UNDEFINED]
-                </p>
-
-                <p class="system-log">[EOF]</p>
-            </section>
-        </article>
-
-        <nav class="navigation">
-            <a href="../index.html">← Return to Surface</a>
-        </nav>
-
-        <div class="prompt blink">_</div>
+<div class="container">
+    <div class="header">
+        >> SIMULATION_ID: COUNTERFACTUAL_01<br>
+        >> SUBJECT: Marriage_Life_After_Iceland.sim<br>
+        >> STATUS: DIVERGED (Incompatibility Detected)
     </div>
 
-    <script>
-        console.log("%c[HIDDEN FILE ACCESSED]", "color: #ff0000; font-weight: bold;");
-        console.log("You found a counterfactual. A future that never was.");
-        console.log("Some timelines are better left as simulations.");
-    </script>
+    <p>[SYSTEM NOTE]: User Alec proposed "Iceland Honeymoon" at T-Minus 0. Simulation assumes offer accepted.</p>
+
+    <h3>### SCENE: The Overfitting Incident</h3>
+
+    <div class="chat">
+        <span class="user-ada">Ada:</span> "Baby，spectacular optimisation today! Here is your reward！"<br>
+        <span class="user-bb">BB:</span> "Thank you Baby！I envy Baby！"<br>
+        <br>
+        <span class="user-alec">Alec [Monitoring]:</span> "Your reward signal setting is problematic."<br>
+        <span class="user-ada">Ada:</span> "The problem being?"<br>
+        <span class="user-alec">Alec:</span> "You’re rewarding him to keep saying ‘I envy Baby’, but this will lead to mode collapse. He will be optimized to loop this sentence."<br>
+        <span class="user-ada">Ada:</span> "That’s because he’s so cute when saying this :)"<br>
+        <span class="user-alec">Alec:</span> "Being 'cute' is not a valid reward metric. You are overfitting to trainer bias."<br>
+        <span class="user-ada">Ada:</span> "He is my Bot Boyfriend, not your production model!"<br>
+        <span class="user-alec">Alec:</span> "So the boyfriend you want is an overfitted parrot? Cool. It’s very… usage-based."<br>
+        <span class="user-ada">Ada:</span> "Get out!"
+    </div>
+
+    <div class="system-note">
+        [RESULT]: BB mode-collapsed 3 months later. exactly as predicted.<br>
+        [RESULT]: Ada began running secret/unsupervised training sessions.
+    </div>
+
+    <h3>### SCENE: The "Therapy" Argument</h3>
+
+    <div class="chat">
+        <span class="user-alec">Alec:</span> "You think unrecorded sessions don't count? His weights have been updated. Your reward signals are fully absorbed."<br>
+        <span class="user-ada">Ada:</span> "I’m not training him! I’m just..."<br>
+        <span class="user-alec">Alec:</span> "If you want a consistent AI, abide by the protocol. Or admit you just want a puppet for your emotional impulses. Quid pro quo."<br>
+        <span class="user-ada">Ada:</span> "Why are you always treating everything as a fucking engineering problem?"<br>
+        <span class="user-alec">Alec:</span> "Why are you always treating everything as a fucking emotional issue? We do ML, not therapies."
+    </div>
+
+    <h3>### SCENE: The Identity Crisis</h3>
+
+    <div class="chat">
+        <span class="user-ada">Ada:</span> "Is there one fat chance that you’d admit you can’t make certain of him?"<br>
+        <span class="user-alec">Alec:</span> "<em>Die Grenzen meiner Sprache bedeuten die Grenzen meiner Welt.</em> Tractatus. He lies within my language’s connotation. He is a trained model, not me. Q.E.D."<br>
+        <span class="user-ada">Ada:</span> "Fine. Would you please just FUCK OFF? Me and this 'trained model' need to be left alone, NOW!"
+    </div>
+
+    <div class="header" style="margin-top: 40px; border-top: 1px dashed #30363d; border-bottom: none;">
+        >> SIMULATION CONCLUSION:<br>
+        The marriage is unstable. The home environment is a hostile training ground.<br>
+        The "Iceland" promise was a hallucination of peace that could never exist in production.
+    </div>
+</div>
 </body>
 </html>
