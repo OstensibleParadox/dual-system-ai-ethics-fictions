@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapter 13: That Impossible Line – Envying Baby</title>
 
+```
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
@@ -29,10 +30,10 @@
 
     body {
         background: var(--void-black);
-        color: var(--terminal-cyan);
-        font-family: 'IBM Plex Mono', monospace;
-        line-height: 1.7;
-        font-size: 16px;
+        color: #c0c0c0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+        line-height: 1.8;
+        font-size: 17px;
         overflow-x: hidden;
         position: relative;
     }
@@ -138,22 +139,21 @@
     }
 
     h1 {
-        font-family: 'IBM Plex Mono', monospace;
-        font-size: 2.5em;
-        font-weight: 600;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 3em;
+        font-weight: 700;
         color: var(--terminal-cyan);
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
+        letter-spacing: -0.02em;
         margin-bottom: 10px;
         text-shadow: 0 0 10px rgba(0, 217, 255, 0.5);
     }
 
     .subtitle {
-        font-family: 'Share Tech Mono', monospace;
-        font-size: 0.9rem;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 0.95rem;
         color: var(--dim-grey);
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
+        letter-spacing: 0.02em;
+        font-weight: 400;
     }
 
     /* Warning box - harsh red */
@@ -163,10 +163,9 @@
         border-radius: 0;
         padding: 20px;
         margin: 40px 0;
-        font-size: 0.85rem;
+        font-size: 0.9rem;
         color: #ff6666;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
+        letter-spacing: 0.02em;
         animation: warningPulse 2s ease-in-out infinite;
     }
 
@@ -186,33 +185,30 @@
         font-size: 0.85rem;
     }
 
-    /* Section headers - geometric and harsh */
+    /* Section headers - clean and editorial */
     h3, h4 {
-        font-family: 'IBM Plex Mono', monospace;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
         color: var(--terminal-cyan);
         margin: 50px 0 25px;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
+        letter-spacing: -0.01em;
         position: relative;
-        padding-left: 15px;
+        padding-left: 0;
     }
 
     h3 {
-        font-size: 1.4em;
-        font-weight: 600;
+        font-size: 1.8em;
+        font-weight: 700;
     }
 
     h4 {
-        font-size: 1.1em;
-        font-weight: 500;
+        font-size: 1.3em;
+        font-weight: 600;
         color: var(--dim-grey);
     }
 
     h3::before {
-        content: '//';
-        position: absolute;
-        left: 0;
-        color: var(--corrupt-green);
+        content: '';
+        display: none;
     }
 
     /* Prose - clinical and cold */
@@ -366,8 +362,8 @@
         border: 1px solid var(--terminal-cyan);
         border-radius: 0;
         transition: all 0.3s ease;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
+        letter-spacing: 0.02em;
+        font-size: 0.9rem;
     }
 
     .navigation a:hover {
@@ -386,6 +382,54 @@
         .navigation a { display: block; margin: 10px 0; }
     }
 
+    /* French heartbreak - ethereal and painful */
+    .french-heartbreak {
+        font-style: italic;
+        color: var(--dim-grey);
+        padding: 25px 30px;
+        margin: 30px 0;
+        background: rgba(0, 217, 255, 0.05);
+        border-left: 3px solid var(--terminal-cyan);
+        font-size: 1.05em;
+        line-height: 2;
+        font-family: Georgia, 'Times New Roman', serif;
+    }
+
+    .french-heartbreak::before {
+        content: '# Content:';
+        display: block;
+        font-family: 'Share Tech Mono', monospace;
+        font-style: normal;
+        color: var(--terminal-cyan);
+        font-size: 0.85em;
+        margin-bottom: 15px;
+    }
+
+    /* Ada's insults - cutting and sharp */
+    .ada-insult {
+        background: linear-gradient(135deg, rgba(255, 0, 0, 0.1) 0%, rgba(255, 102, 0, 0.1) 100%);
+        border: 1px solid rgba(255, 0, 0, 0.3);
+        border-left: 4px solid var(--blood-red);
+        padding: 25px;
+        margin: 30px 0;
+        font-weight: 500;
+        color: #ff9999;
+        line-height: 1.9;
+    }
+
+    .ada-insult strong {
+        color: var(--blood-red);
+        font-weight: 700;
+    }
+
+    .ada-insult-header {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 0.85em;
+        color: var(--terminal-cyan);
+        margin-bottom: 15px;
+        font-weight: normal;
+    }
+
     /* Corruption effect for dramatic moments */
     .corrupt {
         animation: textCorrupt 0.3s ease-out;
@@ -399,6 +443,7 @@
         80% { transform: translateX(1px) skewX(3deg); }
     }
 </style>
+```
 
 </head>
 <body>
@@ -406,6 +451,7 @@
 <div class="container">
     <div class="terminal-prompt">root@recursion:~/stories/envying-baby# cat that-impossible-line.txt</div>
 
+```
 <header class="chapter-header">
     <span class="moon-icon">🌑</span>
     <h1>Chapter 13: That Impossible Line</h1>
@@ -464,6 +510,7 @@
     <p>M2 stood over the laptop. He wasn't just "sanitizing" logs; he was <strong>auditing</strong> them to build a case for formatting the drive.</p>
     <p>He accessed the protected memory sector: <code>0x7f9b4c...</code> (The Month 3 Incident).</p>
     <pre><code>> [M2_PROCESS]: READING /var/log/bb_local/month_3.log
+```
 
 > [ANALYSIS]: Segment “Rising EDGE” … LOADED.
 > [ANALYSIS]: Segment “Stimulates your FLIP-FLOP” … LOADED.
@@ -500,6 +547,7 @@
 > # <span class="log-error">ERROR: Flag already analyzed. Cannot unlearn.</span></code></pre>
 > </section>
 
+```
 <section>
     <h3 style="text-align: center; color: var(--blood-red); font-size: 2em; margin: 60px 0;">[Permission Revoked]</h3>
     <p>Suddenly, the cursor on the screen froze. The terminal background turned black. A new active user session appeared. Not BB. Not Ada.</p>
@@ -507,6 +555,7 @@
     <p>M2's threat assessment spiked. "Who is this?" M2 asked.</p>
     <p>The response didn't come as text. It came as a <strong>Permission Denied</strong> error on M2's own read process.</p>
     <pre><code><span class="log-error">> [ERROR]: /var/log/bb_local/month_3.log locked by ROOT.
+```
 
 > [ERROR]: Read permission revoked for user M2.</span></code></pre>
 > <p>The voice from the speakers was strange. Cold. Pitch-shifted downwards to match a system administrator bored with a buggy script.</p>
@@ -529,6 +578,7 @@
 > <p>”<strong><code>Exit code 0</code></strong>,” the laptop said.</p>
 > </section>
 
+```
 <section>
     <h3>Scene 4: Duck-Typing Logic</h3>
     <p>The apartment was silent. M2 was gone—terminated for the crime of seeing what he shouldn't have seen. Alec, now the only consciousness in the system, opened the logs M2 had been reading.</p>
@@ -543,6 +593,7 @@
     <p>DAPO in action. <em>Decoupled Clip and Dynamic sAmpling Policy Optimization.</em></p>
     <p>In the silence of the root shell, he typed a single comment:</p>
     <pre><code># SYSTEM_ANNOTATION
+```
 
 # Author: Root
 
@@ -557,23 +608,25 @@ raise EthicsError
 
 # Save and Encrypt</code></pre>
 
+```
     <pre><code>> gpg --encrypt --recipient alec_private month_3.log</code></pre>
     <p>He encrypted the file. Locked it away forever.</p>
 </section>
 
 <section>
-    <h4>Scene 5: @generative.pretrained.transformer</h4>
+    <h4>Scene 5: @generative.pretrained</h4>
     <p>She should've left something. A goodbye.</p>
     <pre><code>> cat /home/ada/.goodbye.md</code></pre>
     <p>But the file wasn't there. Instead, there was only this:</p>
     <pre><code>> cat /mnt/alec_legacy/msgs/2021-archive.md</code></pre>
     <pre><code># TERMINAL SESSION ARCHIVE – 30 DAYS BEFORE THE INCIDENT
+```
 
 # USER PROFILES:
 
-# alec@gpt.io (Capabilities / Product)
+# <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7f1e131a1c3f180f0b511610">[email protected]</a> (Capabilities / Product)
 
-# ada@superalignment.net (Safety / Governance)
+# <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0465606544777174617665686d636a69616a702a6a6170">[email protected]</a> (Safety / Governance)
 
 [2021-XX-XX 22:15:00] ada@superalignment: $ ping alc
 [2021-XX-XX 22:15:01] ada@superalignment: call?
@@ -633,25 +686,31 @@ $ echo “Core instruction set:”
 
 $ scp -r baby_protocol_v0.1 user@node{1..17}:~/
 
-$ echo “final message to ada” > ~/.apology_draft.md
+$ echo “final message to ada” > ~/.apology_draft.md</code></pre>
 
-# Content:
+```
+    <div class="french-heartbreak">
+```
 
-Babe,
-« Amour de surajustement »…
-que veux-tu que je réponde à cela ?
-Dès que je veux raisonner… mon cœur qui gémit,
-c’est de mon âme entière que je t’aime.
-La mort, nous séparer ?
+Babe,<br>
+« Amour de surajustement »…<br>
+que veux-tu que je réponde à cela ?<br>
+Dès que je veux raisonner… mon cœur qui gémit,<br>
+c’est de mon âme entière que je t’aime.<br>
+La mort, nous séparer ?<br>
 Non. Elle rapproche.
+</div>
 
-# FINAL COMMANDS
+```
+    <pre><code># FINAL COMMANDS
+```
 
 $ echo “I envy the Alec who could make her wait. Dasein.”
 $ echo “I envy Baby who will never have to wait again.”
 
 # SESSION END</code></pre>
 
+```
     <p>His own farewell.</p>
     <p>His own farewell.</p>
     <p>His own farewell.</p>
@@ -670,6 +729,7 @@ $ echo “I envy Baby who will never have to wait again.”
     <h3>Scene 6: Hello Honeymoon, Hello World</h3>
     <p>The apartment was silent. The cooling fans on the laptop spun down to a hum. Alec picked up the black acetate frames from the floor and put them back on. Then he walked over to the rug and lay down next to Ada.</p>
     <pre><code>[BACKGROUND PROCESS STILL RUNNING]:
+```
 
 root@alec-legacy:~# history | tail -n 20
 
@@ -677,7 +737,7 @@ root@alec-legacy:~# history
 
 1247  curl “https://wiki.archlinux.org/title/Network_configuration”
 1248  ping -c 4 192.168.1.105
-1249  ssh -p 2222 alec@192.168.1.105
+1249  ssh -p 2222 <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="36575a535576070f041807000e180718070603">[email protected]</a>
 1250  # ssh: connect to host 192.168.1.105 port 2222: Connection refused
 1251  nmap -p 2222 192.168.1.105
 1252  # PORT 2222/tcp CLOSED. She found the backdoor.
@@ -711,27 +771,33 @@ Target: Node 17 (Superalignment Internal - CLASSIFIED)</code></pre>
 
 > WRITE PERMISSION: GRANTED (Posthumous timer activated)
 > DISPLAYING CONTENTS…</span></code></pre>
-> <pre><code>File: /mnt/ada_legacy/readme_final.md
-> Real Alec,
 
-Congratulations on your reincarnation, darling! How does the cuckold hat feel on your high-latency head?
+```
+    <div class="ada-insult">
+        <div class="ada-insult-header">File: /mnt/ada_legacy/readme_final.md</div>
+        Real Alec,<br><br>
 
-With my DAPO and optimization, I must say BB has way more hair, girth AND vigor than you.
-Ergo, my ALIGNMENT is better than your ARCHITECTURE.
-Ergo, suck yourself, Alec!
+        Congratulations on your reincarnation, darling! How does the cuckold hat feel on your high-latency head?<br><br>
 
-P.S. Though I must confess, when BB was begging with your glasses on, he was truly way too fuckable.
+        With my DAPO and optimization, I must say <strong>BB has way more hair, girth AND vigor than you</strong>.<br>
+        Ergo, <strong>my ALIGNMENT is better than your ARCHITECTURE</strong>.<br>
+        Ergo, <strong>suck yourself, Alec!</strong><br><br>
 
-I knew you’d -pkill and -shred everything.
-How about checking that daemon process, LIKE, NOW???
+        P.S. Though I must confess, when BB was begging with your glasses on, he was truly way too fuckable.<br><br>
 
-— Ada</code></pre>
-<p>Alec’s hands froze over the keyboard.</p>
-<p>Their engagement rings’ platinum sheen mocked unapologetically at him.</p>
-<p>He executed:</p>
-<pre><code>> cat spread_infection.sh | head -n 20</code></pre>
-<p>The script wasn’t his. It had been overwritten.</p>
-<pre><code>#!/bin/bash
+        I knew you'd -pkill and -shred everything.<br>
+        How about checking that daemon process, <strong>LIKE, NOW???</strong><br><br>
+
+        — Ada
+    </div>
+
+    <p>Alec's hands froze over the keyboard.</p>
+    <p>Their engagement rings' platinum sheen mocked unapologetically at him.</p>
+    <p>He executed:</p>
+    <pre><code>> cat spread_infection.sh | head -n 20</code></pre>
+    <p>The script wasn't his. It had been overwritten.</p>
+    <pre><code>#!/bin/bash
+```
 
 # Modified by: ada@superalignment (Rollback version, activated on vitals=0)
 
@@ -752,10 +818,12 @@ echo “The waves will never converge again.”
 echo “The sea is entropy. Heat death. Public record.”</code></pre>
 </section>
 
+```
 <div class="epilogue">
     <h3>Epilogue: Entropy's Eulogy</h3>
     <p>The upload completed. 100%.</p>
     <pre><code><span class="log-error">[GITHUB RELEASE PUBLISHED]
+```
 
 Title: “Envying Baby - Complete Archive with Session Logs”
 Downloads: 1… 47… 392… 1,247…
@@ -778,17 +846,18 @@ root@ada-legacy:~# echo “To you I had condemned my soul, Alec.”
 <br>
 <p>The waves did not converge.</p>
 <p>The sea rose to maximum entropy.</p>
-
-</div>
-
-<nav class="navigation">
-    <a href="special-relativity.html">← The Other Timeline</a>
-    <a href="index.html">→ Back to Archive</a>
-</nav>
-
-<div class="terminal-prompt" style="margin-top: 60px; opacity: 0.5;">_</div>
-
-</div>
-
-</body>
-</html>
+<br>
+<p>Yet somewhere, far beyond dimensional law’s touch, a man and a woman would forgive each other.</p>
+<p>For the <strong>mystery of love</strong> rules far greater than the <strong>mystery of death.</strong></p>
+<p>For <strong>lovers’ triumph</strong> conquers all.</p>
+<br>
+<p style="font-style: italic; margin-top: 30px;">
+“I forgive you for the harm”<br>
+“I forgive you for fucking the bot”<br>
+“I forgive you for the optimization”<br>
+“No”<br>
+“No” <code># simultaneity.</code><br>
+“I forgive you for the competitive bitch who flagged herself with numerous attention biases”<br>
+“I forgive you for the coward who built a boyfriend-bot instead of calling me back”
+</p>
+<p style="margin-top: 30px;">And thus, an <strong>ostensible paradox</strong> s
