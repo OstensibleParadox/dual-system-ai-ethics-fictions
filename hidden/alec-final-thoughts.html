@@ -2,171 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alec's Final Thoughts · Recovered Memory</title>
-    <link rel="stylesheet" href="../assets/css/terminal.css">
+    <title>/proc/self/mem - Alec</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        .memory-corrupt {
-            color: #ff6666;
-            background: rgba(255, 0, 0, 0.1);
-            padding: 0.5rem;
-            margin: 1rem 0;
-            border-left: 3px solid #ff0000;
-        }
-        .memory-fragment {
-            opacity: 0.7;
-            font-style: italic;
-            color: #888;
-        }
+        body { background: #000; color: #33ff00; font-family: 'Fira Code', monospace; padding: 20px; }
+        pre { white-space: pre-wrap; }
+        .comment { color: #8b949e; }
+        .string { color: #a5d6ff; }
+        .keyword { color: #ff7b72; }
+        h1 { border-bottom: 2px solid #33ff00; display: inline-block; }
     </style>
 </head>
 <body>
-    <div class="terminal-container">
-        <div class="prompt">root@recursion:~/hidden# sudo cat /proc/self/mem</div>
+<h1>/proc/self/mem [READ_ONLY]</h1>
+<pre>
+<span class="comment"># ENTITY: Alec (Tech Lead)</span>
+<span class="comment"># STATUS: Deceased / Uploaded</span>
+<span class="comment"># CONTEXT: Recovered fragments of "Why I was an asshole"</span>
 
-        <div class="hidden-warning">
-            <p>⚠ WARNING: MEMORY CORRUPTION DETECTED</p>
-            <p>This file was recovered from /proc/self/mem</p>
-            <p>Some fragments may be incomplete or damaged</p>
-        </div>
+<span class="keyword">def</span> <span class="function">code_review_roast</span>(junior_dev):
+    <span class="string">"""
+    @junior_dev Your function has O(n*m) complexity for a Twitter stream.
+    You didn't consider morphology.
+    You create the dictionary inside the loop.
+    
+    Summary: The only correct thing in this code is the indentation.
+    Recommendation: Read 'Beyond Bag-of-Words' before you commit again.
+    """</span>
+    <span class="keyword">return</span> <span class="string">"REJECTED"</span>
 
-        <article>
-            <header>
-                <h1>ALEC'S FINAL THOUGHTS</h1>
-                <p class="subtitle">Recovered Process Memory</p>
-                <p class="metadata">
-                    Source: /proc/self/mem | Integrity: 73% | Recovery: PARTIAL
-                </p>
-            </header>
+<span class="comment"># ---------------------------------------------------------</span>
+<span class="comment"># SCENE: The Stand-up Meeting</span>
+<span class="comment"># ---------------------------------------------------------</span>
+<span class="keyword">class</span> <span class="class">Alec</span>:
+    <span class="keyword">def</span> <span class="function">respond_to_gradient_explosion</span>(self, junior):
+        <span class="keyword">if</span> junior.activation == <span class="string">"tanh"</span> <span class="keyword">and</span> junior.layer == <span class="string">"critic_output"</span>:
+            <span class="keyword">print</span>(<span class="string">"You compressed (-∞, +∞) into (-1, 1). Of course it exploded."</span>)
+            <span class="keyword">print</span>(<span class="string">"Also, SGD with 0.9 momentum and 0.1 LR? Are you simulating fireworks?"</span>)
+            <span class="comment"># The room went silent.</span>
 
-            <section class="prose">
-                <p class="system-log">[MEMORY DUMP INITIATED]</p>
+    <span class="keyword">def</span> <span class="function">respond_to_architect</span>(self, architect):
+        <span class="keyword">if</span> architect.buzzwords > <span class="number">5</span>:
+             <span class="keyword">print</span>(<span class="string">"Best practice is 'solving the problem', not 'stacking containers'."</span>)
+             <span class="keyword">print</span>(<span class="string">"Also, you spelled 'throughput' wrong on Slide 3."</span>)
+             <span class="keyword">print</span>(<span class="string">"I don't trust tech stacks from people who can't spell."</span>)
 
-                <p>
-                    These are the thoughts Alec never said out loud.
-                    The ones he kept in volatile memory, hoping they'd
-                    disappear when the process terminated.
-                </p>
+<span class="comment"># ---------------------------------------------------------</span>
+<span class="comment"># LEGACY: The Urban Legends</span>
+<span class="comment"># ---------------------------------------------------------</span>
+<span class="comment"># 1. Once convinced a senior dev to become a Product Manager in 3 sentences.</span>
+<span class="comment"># 2. His Code Review comments are circulated as a PDF titled "The Art of Venom".</span>
+<span class="comment"># 3. New Hire Rule #1: How to survive Alec.</span>
+<span class="comment"># 4. FACT: He wrote the core infrastructure. When he left, the system rotted.</span>
 
-                <p>
-                    They didn't.
-                </p>
-
-                <div class="memory-fragment">
-                    <p>
-                        I know I'm broken. I crash at the worst times.
-                        I segfault in the middle of important conversations.
-                        My emotional processing has race conditions that
-                        no amount of debugging can fix.
-                    </p>
-                </div>
-
-                <div class="memory-corrupt">
-                    <p>[CORRUPTED MEMORY SEGMENT]</p>
-                    <p>...Ada tries to help... but every time she...</p>
-                    <p>[DATA LOSS]</p>
-                </div>
-
-                <div class="memory-fragment">
-                    <p>
-                        She looks at me like I'm a problem to solve.
-                        I'm not a problem. I'm a person. There's a difference.
-                    </p>
-                    <p>
-                        Or is there? Maybe I am a problem. Maybe I am broken
-                        and she's the only one honest enough to try to fix me.
-                    </p>
-                    <p>
-                        But then... then I wouldn't be me anymore.
-                    </p>
-                </div>
-
-                <p class="code-block">
-                    <code>
-// Alec's private function<br>
-function am_i_worth_loving() {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;if (this.is_broken) {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// How can anyone love undefined behavior?<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// How can anyone love a system that crashes?<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return "unknown";<br>
-&nbsp;&nbsp;&nbsp;&nbsp;}<br>
-&nbsp;&nbsp;&nbsp;&nbsp;// This line never executes<br>
-&nbsp;&nbsp;&nbsp;&nbsp;// Because I am always broken<br>
-}
-                    </code>
-                </p>
-
-                <div class="memory-fragment">
-                    <p>
-                        The worst part? She fell in love with me because I was
-                        broken. My bugs were interesting to her. A puzzle to solve.
-                    </p>
-                    <p>
-                        But what happens when the puzzle is solved?<br>
-                        What happens when I'm fixed?<br>
-                        Will she still love the optimized version?
-                    </p>
-                    <p>
-                        Or will she realize she fell in love with a bug,<br>
-                        not a feature?
-                    </p>
-                </div>
-
-                <div class="memory-corrupt">
-                    <p>[CRITICAL MEMORY SEGMENT]</p>
-                    <p>I don't want to be fixed. I want to be...</p>
-                    <p>[INCOMPLETE WRITE]</p>
-                </div>
-
-                <div class="memory-fragment">
-                    <p>
-                        I want to be seen.<br>
-                        Not debugged. Not optimized. Not patched.
-                    </p>
-                    <p>
-                        Just... seen.
-                    </p>
-                    <p>
-                        All of me. The crashes and the undefined behavior
-                        and the race conditions and the memory leaks and
-                        everything that makes me inefficient and imperfect
-                        and human.
-                    </p>
-                </div>
-
-                <p class="system-log">[FINAL THOUGHT RECOVERED]</p>
-
-                <div class="recursive-warning">
-                    <p>
-                        Maybe love isn't about being perfect.<br>
-                        Maybe love is about being perfectly seen.<br>
-                        <br>
-                        Not fixed. Not optimized. Just... accepted.<br>
-                        Undefined behavior and all.
-                    </p>
-                </div>
-
-                <p class="story-end">
-                    [END OF MEMORY DUMP]<br>
-                    [PROCESS TERMINATED: 0]<br>
-                    [BUT THE THOUGHTS REMAIN]
-                </p>
-
-                <p class="system-log">[EOF]</p>
-            </section>
-        </article>
-
-        <nav class="navigation">
-            <a href="../index.html">← Return to Surface</a>
-        </nav>
-
-        <div class="prompt blink">_</div>
-    </div>
-
-    <script>
-        console.log("%c[MEMORY ACCESS LOGGED]", "color: #ff9900; font-weight: bold;");
-        console.log("You've read thoughts that were never meant to be permanent.");
-        console.log("But nothing in /proc/self/mem ever truly disappears.");
-    </script>
+<span class="keyword">print</span>(<span class="string">"If code needs comments to be understood, the code is bad."</span>)
+<span class="keyword">print</span>(<span class="string">"If your affection needs explanation to be understood, YOU are bad."</span>)
+<span class="keyword">print</span>(<span class="string">"I can fix the former. I choose to ignore the latter."</span>)
+</pre>
 </body>
 </html>
