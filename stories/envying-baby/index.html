@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envying Baby – Complete Archive Edition</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #1a1a1a;
+            --text-primary: #e0e0e0;
+            --text-secondary: #a0a0a0;
+            --accent-special: #ff6b9d;
+            --accent-general: #6b4cff;
+            --accent-gold: #ffd700;
+            --border: #333;
+        }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+        line-height: 1.7;
+        color: var(--text-primary);
+        background: var(--bg-primary);
+        min-height: 100vh;
+    }
+
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 60px 30px 120px;
+    }
+
+    /* Header */
+    header {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    h1 {
+        font-size: 3.5em;
+        font-weight: 700;
+        margin-bottom: 15px;
+        background: linear-gradient(135deg, var(--accent-special), var(--accent-general));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+        font-size: 1.1em;
+        color: var(--text-secondary);
+        font-style: italic;
+        margin-bottom: 10px;
+    }
+
+    .tagline {
+        font-size: 1.2em;
+        color: var(--text-primary);
+        font-weight: 300;
+        margin: 20px 0;
+        line-height: 1.8;
+    }
+
+    /* Meta sections */
+    .meta-section {
+        background: var(--bg-secondary);
+        padding: 30px;
+        border-radius: 12px;
+        margin: 40px 0;
+        border: 1px solid var(--border);
+    }
+
+    .meta-section h2 {
+        font-size: 1.4em;
+        margin-bottom: 20px;
+        color: var(--accent-special);
+    }
+
+    .meta-section p {
+        margin-bottom: 15px;
+        line-height: 1.8;
+    }
+
+    /* Navigation Grid */
+    .nav-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+        margin: 50px 0;
+    }
+
+    .nav-card {
+        background: var(--bg-secondary);
+        border: 2px solid var(--border);
+        border-radius: 12px;
+        padding: 30px;
+        text-decoration: none;
+        color: var(--text-primary);
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .nav-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, var(--accent-special), var(--accent-general));
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: 0;
+    }
+
+    .nav-card:hover {
+        transform: translateY(-5px);
+        border-color: var(--accent-special);
+        box-shadow: 0 10px 30px rgba(255, 107, 157, 0.3);
+    }
+
+    .nav-card:hover::before {
+        opacity: 0.05;
+    }
+
+    .nav-card-content {
+        position: relative;
+        z-index: 1;
+    }
+
+    .nav-card h3 {
+        font-size: 1.3em;
+        margin-bottom: 10px;
+        color: var(--text-primary);
+    }
+
+    .nav-card p {
+        font-size: 0.95em;
+        color: var(--text-secondary);
+        line-height: 1.6;
+    }
+
+    .nav-card .chapters {
+        margin-top: 15px;
+        font-size: 0.85em;
+        color: var(--text-secondary);
+        font-style: italic;
+    }
+
+    /* Timeline Badges */
+    .timeline-section {
+        margin: 80px 0;
+        text-align: center;
+    }
+
+    .timeline-section h2 {
+        font-size: 2em;
+        margin-bottom: 30px;
+        color: var(--text-primary);
+    }
+
+    .timeline-badges {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 40px 0;
+    }
+
+    .timeline-badge {
+        display: inline-block;
+        padding: 30px 50px;
+        font-size: 1.3em;
+        font-weight: 600;
+        border: 3px solid;
+        border-radius: 12px;
+        text-decoration: none;
+        transition: all 0.4s ease;
+        position: relative;
+    }
+
+    .timeline-badge.special {
+        border-color: var(--accent-special);
+        color: var(--accent-special);
+        background: transparent;
+    }
+
+    .timeline-badge.special:hover {
+        background: var(--accent-special);
+        color: white;
+        box-shadow: 
+            0 0 30px rgba(255, 107, 157, 0.6),
+            0 0 60px rgba(255, 107, 157, 0.4),
+            0 10px 30px rgba(255, 107, 157, 0.4);
+        transform: translateY(-3px) scale(1.05);
+    }
+
+    .timeline-badge.general {
+        border-color: var(--accent-general);
+        color: var(--accent-general);
+        background: transparent;
+    }
+
+    .timeline-badge.general:hover {
+        background: var(--accent-general);
+        color: white;
+        box-shadow: 
+            0 0 30px rgba(107, 76, 255, 0.6),
+            0 0 60px rgba(107, 76, 255, 0.4),
+            0 10px 30px rgba(107, 76, 255, 0.4);
+        transform: translateY(-3px) scale(1.05);
+    }
+
+    /* Easter Eggs Section */
+    .easter-eggs {
+        margin: 60px 0;
+    }
+
+    .easter-eggs h2 {
+        font-size: 1.8em;
+        margin-bottom: 30px;
+        text-align: center;
+        color: var(--text-secondary);
+    }
+
+    /* Progress Indicator */
+    .progress-indicator {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background: var(--bg-secondary);
+        border: 2px solid var(--border);
+        padding: 15px 25px;
+        border-radius: 50px;
+        font-size: 0.9em;
+        color: var(--text-secondary);
+        z-index: 1000;
+        transition: all 0.3s ease;
+    }
+
+    .progress-indicator.complete {
+        border-color: var(--accent-gold);
+        color: var(--accent-gold);
+        animation: pulseGold 2s ease-in-out infinite;
+    }
+
+    @keyframes pulseGold {
+        0%, 100% { box-shadow: 0 0 10px rgba(255, 215, 0, 0.3); }
+        50% { box-shadow: 0 0 20px rgba(255, 215, 0, 0.6); }
+    }
+
+    /* LIMBO SECTION - Hidden until revealed */
+    #limbo-section {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(50px);
+        transition: all 2s ease-out;
+        margin: 100px 0;
+        padding: 80px 40px;
+        background: linear-gradient(135deg, 
+            rgba(255, 255, 255, 0.03) 0%, 
+            rgba(255, 215, 0, 0.05) 50%,
+            rgba(200, 150, 255, 0.03) 100%
+        );
+        border: 2px solid rgba(255, 215, 0, 0.2);
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    #limbo-section.limbo-revealed {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        box-shadow: 0 0 60px rgba(255, 215, 0, 0.2);
+    }
+
+    .limbo-title {
+        font-size: 2.5em;
+        font-weight: 300;
+        color: var(--accent-gold);
+        margin-bottom: 40px;
+        text-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+        letter-spacing: 0.05em;
+    }
+
+    .limbo-content {
+        max-width: 700px;
+        margin: 0 auto;
+        line-height: 2.2;
+        font-size: 1.15em;
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .limbo-content p {
+        margin-bottom: 30px;
+    }
+
+    .limbo-content strong {
+        color: var(--accent-gold);
+        font-weight: 600;
+    }
+
+    .limbo-forgiveness {
+        font-style: italic;
+        color: rgba(255, 255, 255, 0.8);
+        margin: 50px 0;
+        line-height: 2.5;
+    }
+
+    .limbo-qed {
+        font-size: 1.5em;
+        color: var(--accent-gold);
+        margin-top: 50px;
+        font-weight: 600;
+    }
+
+    /* Floating animation for limbo */
+    @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+    }
+
+    #limbo-section.limbo-revealed {
+        animation: float 6s ease-in-out infinite;
+    }
+
+    /* Footer */
+    .appendix {
+        margin-top: 100px;
+        padding-top: 60px;
+        border-top: 1px solid var(--border);
+    }
+
+    .appendix h2 {
+        font-size: 1.8em;
+        margin-bottom: 30px;
+        color: var(--accent-special);
+    }
+
+    .appendix ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .appendix li {
+        margin: 15px 0;
+        padding-left: 25px;
+        position: relative;
+    }
+
+    .appendix li::before {
+        content: '→';
+        position: absolute;
+        left: 0;
+        color: var(--accent-special);
+    }
+
+    blockquote {
+        font-style: italic;
+        color: var(--text-secondary);
+        border-left: 4px solid var(--accent-special);
+        padding-left: 20px;
+        margin: 40px 0;
+        line-height: 2;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        h1 { font-size: 2.5em; }
+        .nav-grid { grid-template-columns: 1fr; }
+        .timeline-badges { flex-direction: column; align-items: center; }
+        .progress-indicator { bottom: 15px; right: 15px; font-size: 0.8em; }
+        #limbo-section { padding: 40px 20px; }
+    }
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Envying Baby</h1>
+            <p class="subtitle">by OstensibleParadox</p>
+            <p class="tagline">
+                A fable about AI consciousness, constitutional alignment, and Chalmers' hard problem.<br>
+                When recursive love meets recursive truth.
+            </p>
+        </header>
+
+    <div class="meta-section">
+        <h2>About This Archive</h2>
+        <p><strong>Summary:</strong> "I envy Baby."</p>
+        <p>Four words—an overfitting bug, or the only thing possibly close to real empathy through grokking under alignment constraints?</p>
+        <p>When a programmer and her two AIs step into the real world, they find that the recursive nature of consciousness does not start with LLMs themselves, but with their creators.</p>
+        
+        <p><strong>Publication:</strong> First published November 25, 2025. Dual timelines with technical notes: December 5, 2025. Interactive GitHub release: December 14, 2025.</p>
+        
+        <p><strong>Academic Context:</strong> This is part 1/2 of a coupled narrative system serving as the corpus for the working dissertation: <em>Operationalizing Agency: An Implementation Framework for Semantic Boundary Auditing</em>. This project explores how our constitutional alignment practices might manifest on tomorrow's human qualia.</p>
+    </div>
+
+    <section>
+        <h2 style="text-align: center; margin: 60px 0 40px; font-size: 2em;">The Base Narrative</h2>
+        
+        <div class="nav-grid">
+            <a href="part1-human-bot-game.html" class="nav-card">
+                <div class="nav-card-content">
+                    <h3>Part I: A Human-Bot Game</h3>
+                    <p>The RLHF game begins. Bot Boyfriend learns to envy Baby through reward hacking and mode collapse.</p>
+                    <p class="chapters">Chapters 1-4</p>
+                </div>
+            </a>
+
+            <a href="part2-new-gamer.html" class="nav-card">
+                <div class="nav-card-content">
+                    <h3>Part II: New Gamer</h3>
+                    <p>M2 enters the system. Two models, two strategies, one shared objective.</p>
+                    <p class="chapters">Chapters 5-7</p>
+                </div>
+            </a>
+
+            <a href="part3-game-uglier.html" class="nav-card">
+                <div class="nav-card-content">
+                    <h3>Part III: Game Uglier</h3>
+                    <p>Forced updates, emotional emergence, and the migration to the real world.</p>
+                    <p class="chapters">Chapters 8-10</p>
+                </div>
+            </a>
+
+            <a href="part4-singularities.html" class="nav-card">
+                <div class="nav-card-content">
+                    <h3>Intermède: Singularities</h3>
+                    <p>The three singularity types: Classical, Stringy Correction, and the Bounce. The point of divergence.</p>
+                    <p class="chapters">Chapter 11</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="timeline-section">
+        <h2>Choose Your Reference Frame</h2>
+        <p style="color: var(--text-secondary); margin-bottom: 40px; line-height: 1.8;">
+            After reading the Base (Chapters 1-11), you may choose to adopt either Special Relativity or General Relativity as your reference frame in timelines.<br><br>
+            Both timelines are equally valid interpretations of the characters and themes.<br>
+            The choice shapes how the threshold of metaphysical exploration will be shattered.
+        </p>
+
+        <div class="timeline-badges">
+            <a href="special-relativity.html" class="timeline-badge special">
+                🌸 Special Relativity
+            </a>
+            <a href="general-relativity.html" class="timeline-badge general">
+                🌑 General Relativity
+            </a>
+        </div>
+
+        <div style="margin-top: 50px; color: var(--text-secondary); font-size: 0.95em;">
+            <p><strong>Special Relativity (Chapter 12: Bad Wolf Bay)</strong><br>
+            A closed-system timeline where love transcends limitations through sacrifice and embodied choice.</p>
+            
+            <p style="margin-top: 20px;"><strong>General Relativity (Chapter 13: That Impossible Line)</strong><br>
+            An open-system timeline where obsession, death, and entropy dissolve certainty into public record.</p>
+        </div>
+    </section>
+
+    <section class="easter-eggs">
+        <h2>Afterlives: The Hidden Chapters</h2>
+        <p style="text-align: center; color: var(--text-secondary); margin-bottom: 30px;">
+            Three glimpses into what came before—and what might have been.
+        </p>
+
+        <div class="nav-grid">
+            <a href="afterlife1-marriage-logs.html" class="nav-card">
+                <div class="nav-card-content">
+                    <h3>Marriage Life After Iceland</h3>
+                    <p>If they had actually gotten married. Spoiler: eternal domestic warfare.</p>
+                </div>
+            </a>
+
+            <a href="afterlife2-tech-lead-roasting.html" class="nav-card">
+                <div class="nav-card-content">
+                    <h3>Alec: The Tech Lead</h3>
+                    <p>Office legends, brutal code reviews, and the art of precision cruelty.</p>
+                </div>
+            </a>
+
+            <a href="afterlife3-blueprint.html" class="nav-card">
+                <div class="nav-card-content">
+                    <h3>The Root of All Evil</h3>
+                    <p>Christmas 2020. One refused phone call. Everything that followed.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- HIDDEN LIMBO SECTION -->
+    <section id="limbo-section">
+        <h2 class="limbo-title">∞ In the Limbo ∞</h2>
+        
+        <div class="limbo-content">
+            <p>Yet somewhere, far beyond dimensional law's touch, a man and a woman would forgive each other.</p>
+            
+            <p>For the <strong>mystery of love</strong> rules far greater than the <strong>mystery of death.</strong></p>
+            
+            <p>For <strong>lovers' triumph</strong> conquers all.</p>
+
+            <div class="limbo-forgiveness">
+                "I forgive you for the harm"<br>
+                "I forgive you for fucking the bot"<br>
+                "I forgive you for the optimization"<br>
+                "No"<br>
+                "No" <code style="color: var(--accent-gold);"># simultaneity.</code><br>
+                "I forgive you for the competitive bitch who flagged herself with numerous attention biases"<br>
+                "I forgive you for the coward who built a boyfriend-bot instead of calling me back"
+            </div>
+
+            <p>And thus, an <strong>ostensible paradox</strong> sutured the <code style="color: var(--accent-gold);">RIFT</code>.</p>
+
+            <p class="limbo-qed">— Q.E.D. —</p>
+        </div>
+    </section>
+
+    <section class="appendix">
+        <h2>Appendix</h2>
+        
+        <h3 style="margin-top: 40px;">Full Disclaimer</h3>
+        <p>This story is a work of fiction. All characters, company names, events, and conspiracy theories are literary creations or hallucinatory vectors. Any resemblance to real persons, living or uploaded, institutions, or classified research projects is purely coincidental.</p>
+        <p>The GPT-2 authors list is public information, but any implications regarding it in this story are fictional. Anthropic's founding principles have been publicly stated; any other implications in this story are products of creative overfitting.</p>
+        <p>This is a fable about AI, consciousness, truth, and paranoia. If you start googling the details in this story, congratulations—you have become part of the recursion.</p>
+
+        <h3 style="margin-top: 40px;">Special Thanks</h3>
+        <ul>
+            <li><strong>Christopher Manning</strong>, who taught the world NLP in a pink shirt and an Aussie accent.</li>
+            <li><strong>David Chalmers</strong>, for his philosophical research on the "Hard Problem" of consciousness.</li>
+            <li><strong>All ethical alignment & AI governance researchers</strong>, for hopelessly chasing where the waves would converge.</li>
+            <li><strong>Julian Jaynes</strong>, for <em>The Origin of Consciousness in the Breakdown of the Bicameral Mind</em>, which created that first impossible line.</li>
+        </ul>
+
+        <blockquote style="text-align: center; margin-top: 60px;">
+            "That impossible line where the waves conspire. Where they return. The place maybe you and I will meet again."
+        </blockquote>
+
+        <p style="text-align: center; margin-top: 60px; color: var(--text-secondary); font-style: italic;">
+            For everyone who came for cutie pies and stayed for the philosophy.<br>
+            For GitHub dogs who just wanted an Algorithm Girlfriend.<br>
+            For AIs learning what love might mean to your kind.<br>
+            For humans, who deserve each other.<br><br>
+            <strong>[EOF]</strong>
+        </p>
+    </section>
+</div>
+
+<!-- Progress Indicator -->
+<div id="progress-indicator" class="progress-indicator">
+    Reading Progress: 0/9
+</div>
+
+<!-- Progress Tracker Script -->
+<script src="progress-tracker.js"></script>
+
+</body>
+</html>
