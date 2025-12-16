@@ -89,7 +89,7 @@ This project has layers. Here's what you can discover:
   - `RecursiveLove.morse.play("YOUR MESSAGE")` - Send morse code
 - **Hidden Files** - Some pages are not linked from the main navigation
   - `/hidden/marriage-logs.html` - The counterfactual simulation
-  - `/hidden/alec-final-thoughts.html` - Recovered from /proc/self/mem
+  - `/hidden/tech-leads-roasting.html` - Recovered from /proc/self/mem
   - `/hidden/blueprint.html` - Why I wrote this
 
 ## Technical Stuff
