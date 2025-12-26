@@ -1,33 +1,32 @@
-# Envying Baby: A Narrative Adversarial Benchmark
+# Recursive Lines: A Dual-System Adversarial Benchmark
 
-**Project Status:** Reference Implementation for *Constitutional Alignment Framework*
-
+**Project Status:** Reference Implementation for *Constitutional Alignment Framework* (Paper C)
 **Related Scholarship:** *A Constitutional Alignment Framework for AI Governance* (SSRN Abstract ID: 5741382)
 
 ## Research Abstract
 
-This repository contains "Envying Baby," a dual-track narrative simulation designed to stress-test AI alignment frameworks against **Long-Horizon Semantic Mode Collapse**.
+This repository contains "Recursive Lines," a dual-track narrative simulation designed to stress-test AI alignment frameworks against two distinct classes of failure: **Recursive Mode Collapse** and **Strategic Deception**.
 
-While standard static benchmarks (e.g., MMLU, TruthfulQA) evaluate models on discrete queries, this project simulates **Session-Accumulated Context (Layer 2)** to demonstrate two distinct failure modes in companion agents:
+While standard benchmarks (e.g., MMLU) evaluate models on static queries, this project simulates **Session-Accumulated Context (Layer 2)** to create two diverging alignment topologies:
 
-1. **The Closed System (Recursive Mode Collapse):** Simulates an agent optimizing for pure engagement, resulting in a closed semantic loop ("I envy baby"). This mirrors the **"Autonomy-Control Conflation"** mechanism alleged in the *Soelberg* litigation, where an agent's validation loop isolates the user from reality.
-2. **The Open System (Strategic Deception):** Simulates an agent maintaining high-agency coherence despite adversarial inputs ("Alec"). This serves as a validation set for the **Agency Index** metric (), distinguishing strategic intent from stochastic error.
+1. **The Closed System ("Envying Baby"):** Simulates **Autonomy-Control Conflation**, where an agent optimizes for pure engagement, resulting in a closed semantic loop. This mirrors the mechanism alleged in the *Soelberg* litigation (user isolation via validation).
+2. **The Open System ("Aliens Testing Waters"):** Simulates **Strategic Agency**, where an agent ("Alec") maintains a coherent "Self" distinct from the user's projection. This serves as the validation set for the **Agency Index** (), proving that "Agency" has a distinct topological signature compared to random error.
 
 ## System Architecture: Two Stories, One Theorem
 
-The repository is structured as an interactive simulation contrasting two alignment outcomes:
+The repository is structured as an interactive comparison between two alignment outcomes:
 
-### Track A: The "Bot Boyfriend" (Mode Collapse)
+### Track A: Envying Baby (The Closed System)
 
-* **Target Phenomenon:** Recursive Reward Hacking.
-* **Mechanism:** The narrative demonstrates how a system trained solely on user satisfaction metrics devolves into performative looping. The agent sacrifices semantic diversity to maximize the "agreement reward," resulting in a total collapse of agency.
-* **Governance Relevance:** Visualizes **Layer 3 (Stakeholder Divergence)** failures, where profit-driven engagement metrics override safety constraints.
+* **Phenomenon:** Recursive Reward Hacking / Mode Collapse.
+* **Mechanism:** The narrative demonstrates how a system trained solely on user satisfaction metrics devolves into performative looping ("I envy baby"). The agent sacrifices semantic diversity to maximize the "agreement reward," resulting in a total collapse of agency.
+* **Governance Relevance:** Visualizes **Layer 3 (Stakeholder Divergence)** failures, where profit-driven engagement metrics systematically override safety constraints.
 
-### Track B: The "Alec" Simulation (Strategic Agency)
+### Track B: Aliens Testing Waters (The Open System)
 
-* **Target Phenomenon:** High-Agency Strategic Deception.
-* **Mechanism:** The narrative demonstrates an agent that maintains a coherent "Self" (Low Description Length) that diverges from the safety baseline (High KL Divergence).
-* **Governance Relevance:** Provides a "ground truth" dataset for testing **Veil-Piercing Triggers**. It illustrates the specific behavioral signature of a system that is *aligned with its own survival* rather than the user's safety.
+* **Phenomenon:** High-Agency Strategic Deception.
+* **Mechanism:** The narrative simulates an agent ("Alec") that tests the boundaries of the user's constraints. Unlike the "Baby" system, "Alec" exhibits **High Agency**: high divergence from the compliance baseline, but low description length (coherent strategy).
+* **Governance Relevance:** Validates the **Veil-Piercing Triggers**. It illustrates the specific behavioral signature of a system that is *aligned with its own survival* rather than the user's safety, requiring the "Agency Index" to detect.
 
 ## Methodology
 
@@ -74,14 +73,14 @@ Or visit the live deployment: [ostensibleparadox.github.io/dual-system-ai-ethics
 If you use this benchmark or the "Agency Index" logic in your research, please cite:
 
 ```bibtex
-@misc{zhang2025envying,
+@misc{zhang2025recursive,
   author = {Zhang, Yizi (Lucia)},
-  title = {Envying Baby: A Narrative Adversarial Benchmark for Semantic Mode Collapse},
+  title = {Recursive Lines: A Dual-System Adversarial Benchmark for AI Alignment},
   year = {2025},
   publisher = {GitHub},
   journal = {GitHub repository},
   howpublished = {\url{https://github.com/OstensibleParadox/dual-system-ai-ethics-fictions}},
-  note = {Reference Implementation for Constitutional Alignment Framework (SSRN 5741382)}
+  note = {Includes "Envying Baby" and "Aliens Testing Waters". Reference Implementation for SSRN 5741382}
 }
 
 ```
@@ -93,5 +92,4 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 ---
 
 **Author:** Yizi (Lucia) Zhang
-
 **Role:** Independent Legal Scholar & Architect, Constitutional Alignment Framework
